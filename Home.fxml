@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="759.0" prefWidth="1163.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zansfer.HomeController">
+   <children>
+      <TableView fx:id="ContactTable" layoutX="329.0" layoutY="52.0" prefHeight="706.0" prefWidth="831.0">
+        <columns>
+          <TableColumn fx:id="IDColm" prefWidth="83.0" text="ID" />
+          <TableColumn fx:id="NameColm" prefWidth="76.0" text="Name" />
+            <TableColumn fx:id="EmailColm" prefWidth="112.0" text="Email Address" />
+            <TableColumn fx:id="HomeColm" prefWidth="111.0" text="Home Address" />
+            <TableColumn fx:id="PhoneColm" prefWidth="93.0" text="Phone No" />
+            <TableColumn fx:id="MobileColm" prefWidth="124.0" text="Mobile No" />
+            <TableColumn fx:id="FavColm" prefWidth="81.0" text="Favourite" />
+            <TableColumn fx:id="GroupColm" prefWidth="150.0" text="Group Name" />
+        </columns>
+      </TableView>
+      <TextField layoutX="329.0" layoutY="21.0" prefHeight="25.0" prefWidth="680.0" />
+      <TextField fx:id="IDTxt" editable="false" layoutX="173.0" layoutY="52.0" />
+      <TextField fx:id="NameTxt" layoutX="173.0" layoutY="87.0" promptText="Enter Name" />
+      <TextField fx:id="EmailTxt" layoutX="173.0" layoutY="119.0" promptText="Enter Email" />
+      <TextField fx:id="HomeTxt" layoutX="173.0" layoutY="155.0" promptText="Enter Home Address" />
+      <TextField fx:id="PhoneTxt" layoutX="173.0" layoutY="190.0" promptText="Enter Phone Number" />
+      <TextField fx:id="MobileTxt" layoutX="173.0" layoutY="225.0" promptText="Enter Mobile Number" />
+      <TextField fx:id="FavTxt" layoutX="173.0" layoutY="260.0" promptText="Enter Yes  or No" />
+      <TextField fx:id="GroupTxt" layoutX="173.0" layoutY="296.0" promptText="Enter Group Name" />
+      <Label layoutX="14.0" layoutY="56.0" prefHeight="17.0" prefWidth="149.0" text="ID" />
+      <Label layoutX="14.0" layoutY="91.0" prefHeight="17.0" prefWidth="149.0" text="Name" />
+      <Label layoutX="14.0" layoutY="123.0" prefHeight="17.0" prefWidth="149.0" text="Email Address" />
+      <Label layoutX="14.0" layoutY="159.0" prefHeight="17.0" prefWidth="149.0" text="Home Address" />
+      <Label layoutX="14.0" layoutY="194.0" prefHeight="17.0" prefWidth="149.0" text="Phone No" />
+      <Label layoutX="14.0" layoutY="229.0" prefHeight="17.0" prefWidth="149.0" text="Mobile No" />
+      <Label layoutX="14.0" layoutY="264.0" prefHeight="17.0" prefWidth="149.0" text="Favourite" />
+      <Label layoutX="14.0" layoutY="300.0" prefHeight="17.0" prefWidth="149.0" text="Group Name" />
+      <Button fx:id="Refresh" layoutX="1021.0" layoutY="21.0" mnemonicParsing="false" onAction="#ReLoadAction" prefHeight="25.0" prefWidth="117.0" text="Refresh" />
+      <Button layoutX="40.0" layoutY="514.0" mnemonicParsing="false" onAction="#AddAction" prefHeight="38.0" prefWidth="256.0" style="-fx-background-color: lime;" text="Add Contact">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font></Button>
+      <Button layoutX="40.0" layoutY="581.0" mnemonicParsing="false" onAction="#UpdateAction" prefHeight="38.0" prefWidth="256.0" style="-fx-background-color: Yellow;" text="Update Contact">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font></Button>
+      <Button layoutX="40.0" layoutY="652.0" mnemonicParsing="false" onAction="#DeleteAction" prefHeight="38.0" prefWidth="256.0" style="-fx-background-color: Red;" text="Delete Contact">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
